@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { Bars3Icon } from '@heroicons/react/24/outline'
 import { UserCircleIcon } from '@heroicons/react/24/solid'
 import { useAuth } from '../context/AuthContext'
-import logo from '../assets/logo.svg'
+import logo from '../../../client/assets/logo.svg'
 
 function NavBar () {
   const [isOpen, setIsOpen] = useState(false)
