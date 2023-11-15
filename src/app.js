@@ -9,7 +9,7 @@ import recipeRoutes from './routes/recipe.routes.js'
 const app = express()
 
 app.use(cors({
-  origin: 'https://mern-recipe-app-7bj1.onrender.com/',
+  origin: 'https://mern-recipe-app-7bj1.onrender.com',
   credentials: true
 }))
 
