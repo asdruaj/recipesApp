@@ -43,7 +43,7 @@ function NavBar () {
           <img
             className='w-16
             md:w-24 lg:w-32'
-            src='/assets/logo-091edfeb.png' alt='Cuisine Logo'
+            src='/client/assets/logo.svg' alt='Cuisine Logo'
           />
         </Link>
 
