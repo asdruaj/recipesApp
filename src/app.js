@@ -9,7 +9,7 @@ import recipeRoutes from './routes/recipe.routes.js'
 const app = express()
 
 app.use(cors({
-  origin: 'https://deploy-mern-frontend-seven.vercel.app',
+  origin: 'https://mern-recipe-app.onrender.com',
 }))
 
 app.use(morgan('dev'))
