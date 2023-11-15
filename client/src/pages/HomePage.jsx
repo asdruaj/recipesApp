@@ -1,4 +1,4 @@
-import plate from '../../../client/assets/plate.svg'
+import plate from '../../../client/assets/plate.png'
 
 function HomePage () {
   return (
