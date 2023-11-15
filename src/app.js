@@ -10,7 +10,7 @@ const app = express()
 
 app.use(cors(
     {
-        origin: 'https://deploy-mern-frontend-seven.vercel.app',
+        origin: 'https://deploy-mern-frontend-seven.vercel.app/',
         credentials: true
     }
 ))
