@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { Bars3Icon } from '@heroicons/react/24/outline'
 import { UserCircleIcon } from '@heroicons/react/24/solid'
 import { useAuth } from '../context/AuthContext'
+import logo from '../assets/logo.svg'
 
 function NavBar () {
   const [isOpen, setIsOpen] = useState(false)
@@ -43,7 +44,7 @@ function NavBar () {
           <img
             className='w-16
             md:w-24 lg:w-32'
-            src='../assets/logo.svg' alt='Cuisine Logo'
+            src={logo} alt='Cuisine Logo'
           />
         </Link>
 
