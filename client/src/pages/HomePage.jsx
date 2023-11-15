@@ -9,7 +9,7 @@ function HomePage () {
           <button className='transition-all font-medium drop-shadow-xl duration-500 relative mx-auto after:content-["→"] after:absolute after:opacity-0 after:right-[-20px] after:transition-all after:duration-500 hover:after:opacity-100 hover:after:right-[5px] hover:pr-[24px] hover:pl-[8px] hover:bg-amber-700 bg-amber-500 p-2 text-xl md:ml-2 rounded-lg'>Explore our Work  </button>
         </div>
         <div>
-          <img className='w-[250px] animate-wiggle md:w-[300px] lg:w-[400px] mx-auto mt-8' loading='lazy' src='../../../client/assets/plate.png' alt='Cooked Salmon' />
+          <img className='w-[250px] animate-wiggle md:w-[300px] lg:w-[400px] mx-auto mt-8' loading='lazy' src='../../../client/assets/plate.svg' alt='Cooked Salmon' />
         </div>
       </section>
     </header>
