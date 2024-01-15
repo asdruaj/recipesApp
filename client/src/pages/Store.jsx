@@ -11,6 +11,8 @@ const Store = () => {
     protein: 0
   })
 
+  const [handleFiltersDisplay, setHandleFiltersDisplay] = useState(false)
+
   const handleChange = (e) => {
     setFilters(prev => ({ ...prev, query: e.target.value }))
   }
@@ -35,13 +37,12 @@ const Store = () => {
 
         <div className='flex gap-8'>
           <input onChange={handleChange} type='text' className='ml-4 w-[80%] md:ml-56 mt-4 md:w-[30%] min-w-[15rem] bg-slate-300 text-neutral-600 py-1 px-2 rounded-md border border-slate-500 shadow-xl placeholder:text-gray-500' placeholder='Search...' />
-          <button className='md:hidden w-8 mt-4 text-neutral-800 inline-block'><AdjustmentsHorizontalIcon /></button>
+          <button onClick={() => setHandleFiltersDisplay(!handleFiltersDisplay)} className='md:hidden w-8 mt-4 text-neutral-800 inline-block'><AdjustmentsHorizontalIcon /></button>
         </div>
 
         <div className='grid md:grid-cols-[200px,1fr]'>
 
-          <section role='sidebar' className='text-neutral-800 h-[calc(100svh-100px)] -mt-9 ml-4 rounded-md border border-slate-400 bg-slate-300 p-4 hidden md:block'>
-
+          <section role='sidebar' className={`text-neutral-800 h-[calc(100svh-100px)] -mt-9 ml-4 rounded-md border border-slate-400 bg-slate-300 p-4 md:block z-50 ${handleFiltersDisplay ? 'absolute' : 'hidden'}`}>
             <label className='text-base font-bold block'>Nutrients</label>
             <label htmlFor='carbs' className='text-sm font-semibold ml-2'>Min Carbohydrates</label>
             <input onChange={handleCarbsDisplay} type='range' id='carbs' className='ml-2' min='0' max='30' defaultValue='0' />
